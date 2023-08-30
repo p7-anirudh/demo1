@@ -1,0 +1,7 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "This is a build command"
+      - aws s3 cp . s3://<bucket-name>
